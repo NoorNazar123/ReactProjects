@@ -25,14 +25,14 @@ function App() {
       heroimg:
         "https://images.pexels.com/photos/8386365/pexels-photo-8386365.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
-  ];
+  ]; md
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImgIndex(prevIndex => (prevIndex + 1) % images.length);
     }, 3000);
     return () => clearInterval(intervalId);
-  }, [images.length]);
+  }, [images.length]); 
 
   // const nextHandler = () => {
   //   currentImgIndex < 3
